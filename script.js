@@ -1,26 +1,23 @@
 
 // Sample product data
 const products = [
-    { id: 1, name: "Smartphone X Pro", price: 899.99, image: "📱" },
-    { id: 2, name: "Wireless Earbuds", price: 129.99, image: "🎧" },
-    { id: 3, name: "4K Ultra HD Tablet", price: 549.99, image: "📱" },
-    { id: 4, name: "Smart Watch Series 5", price: 299.99, image: "⌚" },
-    { id: 5, name: "Gaming Laptop", price: 1299.99, image: "💻" },
-    { id: 6, name: "Bluetooth Speaker", price: 89.99, image: "🔈" },
-    { id: 7, name: "VR Headset", price: 399.99, image: "👓" },
-    { id: 8, name: "Drone with Camera", price: 599.99, image: "🚁" },
-    { id: 9, name: "Smart Home Hub", price: 199.99, image: "🏠" },
-    { id: 10, name: "Fitness Tracker", price: 149.99, image: "❤️" },
-    { id: 11, name: "Noise Cancelling Headphones", price: 249.99, image: "🎧" },
-    { id: 12, name: "Portable Power Bank", price: 49.99, image: "🔋" },
-    { id: 13, name: "Smartphone Gimbal", price: 99.99, image: "📹" },
-    { id: 14, name: "E-Reader", price: 179.99, image: "📖" },
-    { id: 15, name: "Wireless Charger", price: 39.99, image: "⚡" },
-    { id: 16, name: "Action Camera", price: 349.99, image: "📷" },
-    { id: 17, name: "Smart Thermostat", price: 199.99, image: "🌡️" },
-    { id: 18, name: "Robot Vacuum", price: 399.99, image: "🤖" },
-    { id: 19, name: "Gaming Console", price: 499.99, image: "🎮" },
-    { id: 20, name: "Smart Light Bulbs", price: 69.99, image: "💡" }
+    { id: 1, name: "hp premium 14 stream celeron 4120 cpu 16gb RAM 64gb EMMC Webcam UHD 709524", price: 899.99, image: "<img src='laptop.jpg'>" },
+    { id: 2, name: "Wireless Earbuds", price: 50, image: "<img src='earbuds.jpg'>" },
+    { id: 3, name: "Infinix Note 40 Pro", price: 300, image: "<img src='infinix note 40 pro.jpg'>" },
+    { id: 4, name: "Oriamo Earbuds", price: 60, image: "<img src='earbuds 2.jpg'>" },
+    { id: 5, name: "Tecno Camon 40", price : 600, image: "<img src='tecno camon 40.png'>" },
+    { id: 6, name: "Lenovo Think Pad", price: 89.99, image: "<img src='laptop2.jpg'>" },
+    { id: 7, name: "Hp Premium 4500 CPU 16GB RAM 64GB", price: 950, image: "<img src='hp.png'>" },
+    { id: 8, name: "JBL Headphone", price: 25, image: "<img src='headphone.jpg'>" },
+    { id: 9, name: "Oraimo Earpiece", price: 199.99, image: "<img src='earpiece.png'>" },
+    { id: 10, name: "Huwaie Sreen Touch Ultra", price: 15000, image: "<img src='huwaei.jpg'>" },
+    { id: 11, name: "Iphone 17 ", price: 249.99, image: "<img src='iphone17.jpg'>" },
+    { id: 12, name: "Samsung s25 Ultra", price: 1500, image: "<img src='samsung.jpg'>" },
+    { id: 13, name: "Power Bank", price: 10, image: "<img src='powerbank 1.jpg'>" },
+    { id: 14, name: "E-Reader", price: 10, image: "<img src='laptop2.jpg'>" },
+    { id: 15, name: "Itel solar power bank", price: 120, image: "<img src='powerbank2.jpg'>" },
+    { id: 16, name: "Redmi Note 15", price: 349.99, image: "<img src='redmi note 15.jpg'>" },
+   
 ];
 
 // Cart state
@@ -38,11 +35,11 @@ const cartItems = document.getElementById('cartItems');
 const emptyCartMessage = document.getElementById('emptyCartMessage');
 const cartTotalElement = document.getElementById('cartTotal');
 const checkoutBtn = document.getElementById('checkoutBtn');
-const paymentModal = document.getElementById('paymentModal');
-const closePayment = document.getElementById('closePayment');
-const paymentMethods = document.querySelectorAll('.payment-method');
-const completePaymentBtn = document.getElementById('completePayment');
-const paymentSuccess = document.getElementById('paymentSuccess');
+// Add these to your existing DOM elements list
+const customerInfoModal = document.getElementById('customerInfoModal');
+const closeCustomerInfo = document.getElementById('closeCustomerInfo');
+const submitCustomerInfoBtn = document.getElementById('submitCustomerInfo');
+const customerInfoSuccess = document.getElementById('customerInfoSuccess');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navMenu = document.getElementById('navMenu');
 const submitReviewBtn = document.getElementById('submitReview');
@@ -110,38 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Close payment modal
-    closePayment.addEventListener('click', function() {
-        paymentModal.classList.remove('active');
-    });
-    
-    // Payment method selection
-    paymentMethods.forEach(method => {
-        method.addEventListener('click', function() {
-            paymentMethods.forEach(m => m.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-    
-    // Complete payment
-    completePaymentBtn.addEventListener('click', function() {
-        // Show success message
-        paymentSuccess.classList.add('active');
-        
-        // Clear cart after successful payment
-        setTimeout(function() {
-            cart = [];
-            cartCount = 0;
-            cartTotal = 0;
-            updateCartDisplay();
-            paymentSuccess.classList.remove('active');
-            paymentModal.classList.remove('active');
-            
-            // Show thank you alert
-            alert('Thank you for your purchase! Your order has been placed successfully.');
-        }, 2000);
-    });
-    
+   // Checkout button - CHANGED
+checkoutBtn.addEventListener('click', function() {
+    if (cart.length > 0) {
+        cartModal.classList.remove('active');
+        // Show customer info modal instead of payment modal
+        customerInfoModal.classList.add('active');
+    }
+});
+
     // Submit review
     submitReviewBtn.addEventListener('click', function() {
         const name = document.getElementById('reviewName').value;
@@ -233,6 +207,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Submit customer info
+submitCustomerInfoBtn.addEventListener('click', function() {
+    // Get all form values
+    const name = document.getElementById('customerName').value;
+    const phone = document.getElementById('customerPhone').value;
+    const email = document.getElementById('customerEmail').value;
+    
+    // Validate required fields
+    if (!name || !phone || !email) {
+        alert('Please fill in all required fields (Name, Phone, Email)');
+        return;
+    }
+    
+    // Show success message
+    customerInfoSuccess.classList.add('active');
+    
+    // After 2 seconds, you can either:
+    // Option A: Show a success message and clear cart
+    // Option B: Redirect to a "thank you" page
+    // Option C: Show a simple payment confirmation
+    
+    setTimeout(function() {
+        customerInfoSuccess.classList.remove('active');
+        customerInfoModal.classList.remove('active');
+        
+        // Show order confirmation
+        alert(`Thank you ${name}! Your order has been received.\nWe'll contact you at ${phone} for delivery details.`);
+        
+        // Clear the cart
+        cart = [];
+        cartCount = 0;
+        cartTotal = 0;
+        updateCartDisplay();
+    }, 2000);
+});
+
+
 
 // Render products to the page
 function renderProducts() {

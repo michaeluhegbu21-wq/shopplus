@@ -1,5 +1,5 @@
 :root {
-  --primary: #2563eb;
+  --primary: black;
   --primary-dark: #1d4ed8;
   --secondary: #1e293b;
   --accent: #3b82f6;
@@ -13,34 +13,59 @@
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --radius: 8px;
 }
+img {
+ background-position: center;
+ border-radius: 3rem;
+}
+img:hover{
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 2rem;
 }
 
 body {
-  background-color: #f9fafb;
+  background-color: orangered ;
   color: var(--dark);
   line-height: 1.6;
 }
+p {
+  font-size: x-large;
+  color: black;
+  background-color: orangered;
+text-align: center;
+}
 
+h2 {
+  background-color: red;
+  background-size: contain;
+  color: black;
+}
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  background: red;
+  
 }
-
+.container :hover{
+  transform: scale3d(1.05);
+}
 /* Header Styles */
 header {
-  background-color: white;
+  background-color:red;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 2rem;
 }
 
 .header-container {
@@ -49,25 +74,19 @@ header {
   align-items: center;
   padding: 15px 0;
   position: relative;
+  border-radius: 2rem;
+}
+.header-container :hover{
+  transform: scale3d(1.05);
 }
 
-.logo-placeholder {
-  width: 180px;
-  height: 50px;
-  background-color: var(--primary);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: var(--radius);
-}
+
 
 /* Navigation Menu - Fixed */
 nav {
   display: flex;
   align-items: center;
+  
 }
 
 #navMenu {
@@ -124,8 +143,11 @@ nav a:hover {
   color: var(--secondary);
   cursor: pointer;
   z-index: 1002;
-}
 
+}
+.mobile-menu-btn{
+  transform: scale(1.05);
+}
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
@@ -159,7 +181,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -167,7 +189,7 @@ nav a:hover {
 .section-title {
   text-align: center;
   margin-bottom: 40px;
-  color: var(--secondary);
+  color: white;
   font-size: 2.2rem;
 }
 
@@ -191,7 +213,7 @@ nav a:hover {
 }
 
 .product-img {
-  height: 200px;
+  height: 20rem;
   background-color: #e2e8f0;
   display: flex;
   align-items: center;
@@ -335,18 +357,21 @@ textarea.form-control {
 
 .submit-btn:hover {
   background-color: var(--primary-dark);
+  transform: scale(1.05);
 }
 
 /* Contact Section */
 .contact-section {
   padding: 60px 0;
   margin-bottom: 60px;
+  background-color: red;
 }
 
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  background-color: orangered;
 }
 
 .contact-info h3 {
