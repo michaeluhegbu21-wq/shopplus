@@ -1,415 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopplus Tech Stores - Premium Gadgets & Electronics</title>
-  <link rel="stylesheet" href="style.css">
-    
-        
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header with Logo Space -->
     <header>
-        <div class="container header-container">
-            <!-- Logo Placeholder -->
-            <div class="logo-placeholder">
-                SHOPPLUS
-            </div>
-            
-            <!-- Navigation Menu -->
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li class="cart-icon" id="cartIcon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count" id="cartCount">0</span>
-                    </li>
-                </ul>
-            </nav>
+      <div class="container header-container">
+        <!-- Logo Placeholder -->
+        <div class="logo-placeholder">
+          <img class="logo" src="storelogo.png" width="500px" height="80px" />
+          SHOPPLUS
         </div>
+
+        <!-- Navigation Menu -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li class="cart-icon" id="cartIcon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <h1>Welcome to Shopplus Tech Stores</h1>
-            <p>Discover the latest gadgets and cutting-edge technology at unbeatable prices. From smartphones to smart home devices, we have everything you need to stay ahead in the tech world.</p>
-            <a href="#products" class="cta-button">Shop Now</a>
-        </div>
+      <div class="container">
+        <img src="store.jpg" />
+        <h1>Welcome to Shopplus Tech Stores</h1>
+        <p>
+          Discover the latest gadgets and cutting-edge technology at unbeatable
+          prices. From smartphones to smart home devices, we have everything you
+          need to stay ahead in the tech world.
+        </p>
+        <a href="#products" class="cta-button">Shop Now</a>
+      </div>
     </section>
 
     <!-- Products Section -->
     <section class="container" id="products">
-        <h2 class="section-title">Featured Gadgets</h2>
-        <div class="products-grid" id="productsGrid">
-            <!-- Products will be dynamically added here -->
-        </div>
+      <h2 class="section-title">Featured Gadgets</h2>
+      <div class="products-grid" id="productsGrid">
+       
+        <!-- Products will be dynamically added here -->
+       
+      </div>
     </section>
+
+<!--info-->
+<div class="info">
+  <p>The products listed above are The Featured and Hot Selling Products. If you didn't find any gadget of your intrest, contact us immediately. The listed gadgets are updated every 2 weeks</p>
+</div>
 
     <!-- Testimonials Section -->
     <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">Customer Testimonials</h2>
-            
-            <div class="testimonials-container">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="customer-info">
-                        <div class="customer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <div class="customer-name">Alex Johnson</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>4.5</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"I bought the latest smartphone from Shopplus and I'm extremely satisfied. The delivery was fast and the product is exactly as described. Will definitely shop here again!"</p>
+      <div class="container">
+        <h2 class="section-title">Customer Testimonials</h2>
+
+        <div class="testimonials-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="customer-info">
+              <div class="customer-img">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="customer-name">Alex Johnson</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>4.5</span>
                 </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
-                    <div class="customer-info">
-                        <div class="customer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <div class="customer-name">Maria Garcia</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>5.0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Excellent service and high-quality products. The wireless earbuds I purchased work perfectly and the battery life is amazing. Shopplus is now my go-to tech store!"</p>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card">
-                    <div class="customer-info">
-                        <div class="customer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <div class="customer-name">Samuel Lee</div>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <span>4.0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p>"Great prices and a wide selection of gadgets. The smartwatch I bought has been a game-changer for my fitness routine. Customer support was also very helpful when I had questions."</p>
-                </div>
+              </div>
             </div>
-            
-            <!-- Customer Review Form -->
-            <div class="review-form">
-                <h3 class="form-title">Write Your Own Review</h3>
-                <div class="form-group">
-                    <label for="reviewName">Your Name</label>
-                    <input type="text" id="reviewName" class="form-control" placeholder="Enter your name">
+            <p>
+              "I bought the latest smartphone from Shopplus and I'm extremely
+              satisfied. The delivery was fast and the product is exactly as
+              described. Will definitely shop here again!"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="customer-info">
+              <div class="customer-img">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="customer-name">Maria Garcia</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5.0</span>
                 </div>
-                <div class="form-group">
-                    <label for="reviewRating">Rating</label>
-                    <select id="reviewRating" class="form-control">
-                        <option value="5">5 Stars - Excellent</option>
-                        <option value="4">4 Stars - Very Good</option>
-                        <option value="3" selected>3 Stars - Good</option>
-                        <option value="2">2 Stars - Fair</option>
-                        <option value="1">1 Star - Poor</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="reviewText">Your Review</label>
-                    <textarea id="reviewText" class="form-control" placeholder="Share your experience with Shopplus Tech Stores"></textarea>
-                </div>
-                <button class="submit-btn" id="submitReview">Submit Review</button>
-                <div class="success-message" id="reviewSuccess">
-                    Thank you for your review! It has been submitted successfully.
-                </div>
+              </div>
             </div>
+            <p>
+              "Excellent service and high-quality products. The wireless earbuds
+              I purchased work perfectly and the battery life is amazing.
+              Shopplus is now my go-to tech store!"
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="customer-info">
+              <div class="customer-img">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="customer-name">Samuel Lee</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span>4.0</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              "Great prices and a wide selection of gadgets. The smartwatch I
+              bought has been a game-changer for my fitness routine. Customer
+              support was also very helpful when I had questions."
+            </p>
+          </div>
         </div>
+
+        <!-- Customer Review Form -->
+        <div class="review-form">
+          <h3 class="form-title">Write Your Own Review</h3>
+          <div class="form-group">
+            <label for="reviewName">Your Name</label>
+            <input
+              type="text"
+              id="reviewName"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="reviewRating">Rating</label>
+            <select id="reviewRating" class="form-control">
+              <option value="5">5 Stars - Excellent</option>
+              <option value="4">4 Stars - Very Good</option>
+              <option value="3" selected>3 Stars - Good</option>
+              <option value="2">2 Stars - Fair</option>
+              <option value="1">1 Star - Poor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="reviewText">Your Review</label>
+            <textarea
+              id="reviewText"
+              class="form-control"
+              placeholder="Share your experience with Shopplus Tech Stores"
+            ></textarea>
+          </div>
+          <button class="submit-btn" id="submitReview">Submit Review</button>
+          <div class="success-message" id="reviewSuccess">
+            Thank you for your review! It has been submitted successfully.
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="container" id="about">
-        <h2 class="section-title">About Shopplus Tech Stores</h2>
-        <div style="max-width: 800px; margin: 0 auto 60px; background: var(--light); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border);">
-            <p style="margin-bottom: 20px;">Welcome to Shopplus Tech Stores, your premier destination for the latest and greatest in technology and gadgets. Founded in 2020, we've quickly grown to become one of the most trusted online retailers for tech enthusiasts.</p>
-            
-            <p style="margin-bottom: 20px;">Our mission is to make cutting-edge technology accessible to everyone. We carefully select each product in our inventory to ensure quality, reliability, and value for money. From smartphones and laptops to smart home devices and wearables, we offer a wide range of products to suit every need and budget.</p>
-            
-            <p style="margin-bottom: 20px;">At Shopplus, we believe in providing exceptional customer service. Our team of tech experts is always ready to help you find the perfect product for your needs. We offer fast shipping, easy returns, and a 12-month warranty on all products.</p>
-            
-            <p>Thank you for choosing Shopplus Tech Stores. We're excited to be part of your tech journey!</p>
-        </div>
+      <h2 class="section-title">About Shopplus Tech Stores</h2>
+      <div
+        style="
+          max-width: 800px;
+          margin: 0 auto 60px;
+          background: var(--light);
+          padding: 40px;
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          border: 1px solid var(--border);
+        "
+      >
+        <p style="margin-bottom: 20px">
+          Welcome to Shopplus Tech Stores, your premier destination for the
+          latest and greatest in technology and gadgets. Founded in 2020, we've
+          quickly grown to become one of the most trusted online retailers for
+          tech enthusiasts.
+        </p>
+
+        <p style="margin-bottom: 20px">
+          Our mission is to make cutting-edge technology accessible to everyone.
+          We carefully select each product in our inventory to ensure quality,
+          reliability, and value for money. From smartphones and laptops to
+          smart home devices and wearables, we offer a wide range of products to
+          suit every need and budget.
+        </p>
+
+        <p style="margin-bottom: 20px" >
+          At Shopplus, we believe in providing exceptional customer service. Our
+          team of tech experts is always ready to help you find the perfect
+          product for your needs. We offer fast shipping, easy returns, and a
+          12-month warranty on all products.
+        </p>
+
+        <p>
+          Thank you for choosing Shopplus Tech Stores. We're excited to be part
+          of your tech journey!
+        </p>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Have questions about our products or need assistance with your order? Our customer support team is here to help.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Tech Street, Silicon Valley, CA 94000</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>support@shopplustech.com</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon-Fri: 9am-6pm PST | Sat: 10am-4pm PST</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <div class="form-group">
-                        <label for="contactName">Your Name</label>
-                        <input type="text" id="contactName" class="form-control" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactEmail">Email Address</label>
-                        <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactMessage">Your Message</label>
-                        <textarea id="contactMessage" class="form-control" placeholder="How can we help you?"></textarea>
-                    </div>
-                    <button class="submit-btn" id="submitContact">Send Message</button>
-                    <div class="success-message" id="contactSuccess">
-                        Your message has been sent successfully! We'll get back to you soon.
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              Have questions about our products or need assistance with your
+              order? Our customer support team is here to help.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>No 55 Owerri Road Nnewi Anambra State Nigeria</span>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-phone"></i>
+                <span>+234 814 383 4904</span>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <span>support@shopplustech.com</span>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 9am-6pm GMT| Sat: 10am-4pm GMT/span>
+              </div>
             </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input
+                type="text"
+                id="contactName"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input
+                type="email"
+                id="contactEmail"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Your Message</label>
+              <textarea
+                id="contactMessage"
+                class="form-control"
+                placeholder="How can we help you?"
+              ></textarea>
+            </div>
+            <button class="submit-btn" id="submitContact">Send Message</button>
+            <div class="success-message" id="contactSuccess">
+              Your message has been sent successfully! We'll get back to you
+              soon.
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq-section" id="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-container">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What payment methods do you accept?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. All transactions are secure and encrypted.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How long does shipping take?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Standard shipping takes 5-7 business days. Express shipping is available for an additional fee and delivers in 2-3 business days. International shipping times vary by location.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What is your return policy?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer a 30-day return policy for all unused products in original packaging. Return shipping is free for defective items. Please contact our support team to initiate a return.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Do you offer international shipping?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we ship to over 50 countries worldwide. Shipping costs and delivery times vary by destination. You can calculate shipping costs at checkout.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 5 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What warranty do your products come with?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>All products come with a 12-month manufacturer's warranty. Extended warranty options are available for select items at checkout.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What payment methods do you accept?</span>
+              <i class="fas fa-chevron-down"></i>
             </div>
+            <div class="faq-answer">
+              <p>
+                We accept only payment on delivery, cash or transfer to aviod future re-occurences
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does shipping take?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Standard shipping takes 1-2 business days. 
+                days. Shipping varies by location.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is your return policy?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We offer a 30-day return policy for all unused products in
+                original packaging. Return shipping is free for defective items.
+                Please contact our support team to initiate a return.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you offer international shipping?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No we offer shipping only in the 36 states in Nigeria
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What warranty do your products come with?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                All products come with a 12-month manufacturer's warranty.
+                Extended warranty options are available for select items at
+                checkout.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Cart Modal -->
     <div class="cart-modal" id="cartModal">
-        <div class="cart-header">
-            <h3>Your Shopping Cart</h3>
-            <button class="close-cart" id="closeCart">&times;</button>
-        </div>
-        
-        <div class="cart-items" id="cartItems">
-            <!-- Cart items will be dynamically added here -->
-            <p style="text-align: center; color: var(--gray); padding: 20px;" id="emptyCartMessage">Your cart is empty</p>
-        </div>
-        
-        <div class="cart-total">
-            Total: $<span id="cartTotal">0.00</span>
-        </div>
-        
-        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+      <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button class="close-cart" id="closeCart">&times;</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+        <p
+          style="text-align: center; color: var(--gray); padding: 20px"
+          id="emptyCartMessage"
+        >
+          Your cart is empty
+        </p>
+      </div>
+
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+
+      <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
     </div>
 
     <!-- Address Form Modal -->
     <div class="address-modal" id="addressModal">
-        <div class="address-container">
-            <div class="address-header">
-                <h3>Shipping Information</h3>
-                <button class="close-address" id="closeAddress">&times;</button>
-            </div>
-            
-            <div class="address-form-grid">
-                <div class="address-form-group">
-                    <label for="firstName">First Name *</label>
-                    <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required>
-                </div>
-                
-                <div class="address-form-group">
-                    <label for="lastName">Last Name *</label>
-                    <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required>
-                </div>
-                
-                <div class="address-form-group">
-                    <label for="phoneNumber">Phone Number *</label>
-                    <input type="tel" id="phoneNumber" class="form-control" placeholder="Enter your phone number" required>
-                </div>
-                
-                <div class="address-form-group">
-                    <label for="emailAddress">Email Address *</label>
-                    <input type="email" id="emailAddress" class="form-control" placeholder="Enter your email" required>
-                </div>
-                
-                <div class="address-form-group">
-                    <label for="state">State/Province *</label>
-                    <input type="text" id="state" class="form-control" placeholder="Enter your state" required>
-                </div>
-                
-                <div class="address-form-group">
-                    <label for="postalCode">Postal Code *</label>
-                    <input type="text" id="postalCode" class="form-control" placeholder="Enter postal code" required>
-                </div>
-                
-                <div class="address-form-group full-width">
-                    <label for="address">Full Address *</label>
-                    <textarea id="address" class="form-control" placeholder="Enter your complete address (street, city, etc.)" required></textarea>
-                </div>
-                
-                <div class="address-form-group full-width">
-                    <label for="additionalNotes">Additional Notes (Optional)</label>
-                    <textarea id="additionalNotes" class="form-control" placeholder="Any special instructions for delivery?"></textarea>
-                </div>
-            </div>
-            
-            <button class="submit-address-btn" id="submitAddress">Submit Shipping Details</button>
-            
-            <div class="success-message" id="addressSuccess">
-                Shipping information saved successfully! Your order has been placed.
-            </div>
+      <div class="address-container">
+        <div class="address-header">
+          <h3>Shipping Information</h3>
+          <button class="close-address" id="closeAddress">&times;</button>
         </div>
+
+        <div class="address-form-grid">
+          <div class="address-form-group">
+            <label for="firstName">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              class="form-control"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <div class="address-form-group">
+            <label for="lastName">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              class="form-control"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="address-form-group">
+            <label for="phoneNumber">Phone Number *</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              class="form-control"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="address-form-group">
+            <label for="emailAddress">Email Address *</label>
+            <input
+              type="email"
+              id="emailAddress"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="address-form-group">
+            <label for="state">State/Province *</label>
+            <input
+              type="text"
+              id="state"
+              class="form-control"
+              placeholder="Enter your state"
+              required
+            />
+          </div>
+
+          <div class="address-form-group">
+            <label for="postalCode">Postal Code *</label>
+            <input
+              type="text"
+              id="postalCode"
+              class="form-control"
+              placeholder="Enter postal code"
+              required
+            />
+          </div>
+
+          <div class="address-form-group full-width">
+            <label for="address">Full Address *</label>
+            <textarea
+              id="address"
+              class="form-control"
+              placeholder="Enter your complete address (street, city, etc.)"
+              required
+            ></textarea>
+          </div>
+
+          <div class="address-form-group full-width">
+            <label for="additionalNotes">Additional Notes (Optional)</label>
+            <textarea
+              id="additionalNotes"
+              class="form-control"
+              placeholder="Any special instructions for delivery?"
+            ></textarea>
+          </div>
+        </div>
+
+        <button class="submit-address-btn" id="submitAddress">
+          Submit Shipping Details
+        </button>
+
+        <div class="success-message" id="addressSuccess">
+          Shipping information saved successfully! Your order has been placed.
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h3>Shopplus Tech</h3>
-                    <p>Your premier destination for the latest gadgets and technology. We bring innovation to your doorstep.</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#products"><i class="fas fa-shopping-bag"></i> Products</a></li>
-                        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
-                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                        <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Policy</a></li>
-                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Return Policy</a></li>
-                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Connect With Us</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Shopplus Tech Stores. All rights reserved.</p>
-                <p>This is a portfolio demonstration website. All transactions and data are simulated.</p>
-            </div>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Shopplus Tech</h3>
+            <p>
+              Your premier destination for the latest gadgets and technology. We
+              bring innovation to your doorstep.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="#products"
+                  ><i class="fas fa-shopping-bag"></i> Products</a
+                >
+              </li>
+              <li>
+                <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+              </li>
+              <li>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li>
+                <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+              </li>
+              <li>
+                <a href="./shipping.html"
+                  ><i class="fas fa-shipping-fast"></i> Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a href="./return.html"
+                  ><i class="fas fa-exchange-alt"></i> Return Policy</a
+                >
+              </li>
+              <li>
+                <a href="./privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect With Us</h3>
+            <ul>
+              <li>
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="https://instagram"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="https://youtube.com"><i class="fab fa-youtube"></i> YouTube</a>
+              </li>
+              <li>
+                <a href="https://linkedin.com"><i class="fab fa-youtube"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 Shopplus Tech Stores. All rights reserved.</p>
+          
+           
+        </div>
+      </div>
     </footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-   

@@ -1,26 +1,22 @@
 
         // Sample product data
         const products = [
-            { id: 1, name: "Smartphone X Pro", price: 899.99, image: "📱" },
-            { id: 2, name: "Wireless Earbuds", price: 129.99, image: "🎧" },
-            { id: 3, name: "4K Ultra HD Tablet", price: 549.99, image: "📱" },
-            { id: 4, name: "Smart Watch Series 5", price: 299.99, image: "⌚" },
-            { id: 5, name: "Gaming Laptop", price: 1299.99, image: "💻" },
-            { id: 6, name: "Bluetooth Speaker", price: 89.99, image: "🔈" },
-            { id: 7, name: "VR Headset", price: 399.99, image: "👓" },
-            { id: 8, name: "Drone with Camera", price: 599.99, image: "🚁" },
-            { id: 9, name: "Smart Home Hub", price: 199.99, image: "🏠" },
-            { id: 10, name: "Fitness Tracker", price: 149.99, image: "❤️" },
-            { id: 11, name: "Noise Cancelling Headphones", price: 249.99, image: "🎧" },
-            { id: 12, name: "Portable Power Bank", price: 49.99, image: "🔋" },
-            { id: 13, name: "Smartphone Gimbal", price: 99.99, image: "📹" },
-            { id: 14, name: "E-Reader", price: 179.99, image: "📖" },
-            { id: 15, name: "Wireless Charger", price: 39.99, image: "⚡" },
-            { id: 16, name: "Action Camera", price: 349.99, image: "📷" },
-            { id: 17, name: "Smart Thermostat", price: 199.99, image: "🌡️" },
-            { id: 18, name: "Robot Vacuum", price: 399.99, image: "🤖" },
-            { id: 19, name: "Gaming Console", price: 499.99, image: "🎮" },
-            { id: 20, name: "Smart Light Bulbs", price: 69.99, image: "💡" }
+            { id: 1, name: "Iphone 17 pro max", price: 1500000, image: "<img src='iphone17.jpg'>" },
+            { id: 2, name: "Zealot Bass Headphone", price: 15000, image: "<img src='headphone.jpg'>" },
+            { id: 3, name: "Hp laptop", price: 800000, image: "<img src='hp.png'>" },
+            { id: 4, name: "Oriamo space earbuds", price: 20000, image: "<img src='earbuds 2.jpg'>" },
+            { id: 5, name: "JBL Bass Earbuds", price: 15000, image: "<img src='earbuds.jpg'>" },
+            { id: 6, name: "Huwaei Screen Pad Ultra Laptop", price: 13000000, image: "<img src='huwaei.jpg'>" },
+            { id: 7, name: "Infinix Note 40 Pro", price: 600000, image: "<img src='infinix.jpg'>" },
+            { id: 8, name: "Itel S25 Ultra", price: 500000, image: "<img src='itel s25 ultra.jpg'>" },
+            { id: 9, name: "Macbook", price: 3000000, image: "<img src='laptop.jpg'>" },
+            { id: 10, name: "Lenovo Thinkpad", price: 1000000, image: "<img src='laptop2.jpg'>" },
+            { id: 11, name: "Apple Powerbank", price: 15000, image: "<img src='powerbank 1.jpg'>" },
+            { id: 12, name: "Itel Heavy Duty Power Bank", price: 200000, image: "<img src='powerbank2.jpg'>" },
+            { id: 13, name: "Samsung S24 Ultra", price: 1500000, image: "<img src='samsung.jpg'>" },
+            { id: 14, name: "Tecno Camon 40", price: 500000, image: "<img src='tecno camon 40.png'>" },
+            { id: 15, name: "Redmi Note 15", price: 600000, image: "<img src='redmi note 15.jpg'>" },
+            
         ];
 
         // Cart state
@@ -134,7 +130,7 @@
                 }
                 
                 // Validate phone (basic)
-                if (phone.length < 10) {
+                if (phone.length < 11) {
                     alert('Please enter a valid phone number.');
                     return;
                 }
@@ -262,7 +258,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">${product.name}</h3>
-                        <div class="product-price">$${product.price.toFixed(2)}</div>
+                        <div class="product-price">NGN ${product.price.toFixed(2)}</div>
                         <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
                     </div>
                 `;

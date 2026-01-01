@@ -57,10 +57,10 @@ header {
 }
 
 .logo-placeholder {
-  width: 180px;
+  width: 200px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-  color: white;
+ 
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,9 +71,34 @@ header {
   transition: transform 0.3s ease;
 }
 
-.logo-placeholder:hover {
-  transform: translateY(-2px);
+
+
+.logo{
+  border-radius: 2rem;
+  border-color: black;
+  justify-content: center;
 }
+
+
+.logo-placeholder:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+/*info*/
+.info{
+background-color:var(--primary-dark) ;
+border: black;
+border-radius: 2rem;
+}
+
+p{
+  font-size: x-large;
+color: black;
+background-position: center;
+background-color: orangered;
+border-radius: 1.2rem;
+}
+
 
 /* Navigation Menu */
 nav {
